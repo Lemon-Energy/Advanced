@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vue</title>
+  <link rel="stylesheet" type="text/css" href="./carousel.css" >
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="./carousel.js"></script>
+</head>
+<body>
+  <div id="app">
+    <v-carousel :data="arr" />
+    
+  </div>
+  <script>
+    var app = new Vue({
+      el: '#app',
+      data() {
+        return {
+          arr:[1,2,3,4,5]
+        }
+      },
+      methods: {
+        
+      }
+    })
+  </script>
+</body>
+</html>
